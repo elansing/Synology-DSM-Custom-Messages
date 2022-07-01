@@ -20,7 +20,7 @@
       $Databaseuser = $config['DB-User'];
       $Databasepasswd = $config['DB-Passwd'];
 			$KD = $SessionToken;
-			$pdo = new PDO('mysql:host=localhost;dbname=elansing_Banking', 'elansing_Banking', 'Fff9s6?712');
+      $pdo = new PDO("mysql:host={$Databasehost};dbname={$Database}", "{$Databaseuser}", "{$Databasepasswd}";
 			$sql = "SELECT * FROM login WHERE user = '".$KD."'";
 			$user = $pdo->query($sql)->fetch();
 		?>
