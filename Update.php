@@ -1,6 +1,10 @@
 <?php
 session_start();
-if(isset($_SESSION["elansing_uWjXvgPMQHbJatunXDNP32"])) {
+//load Config File
+$config = require_once('../assets/config.php');
+//Include and Define important Settings
+$SessionToken = $config['Session-Token'];
+if(isset($_SESSION["{$SessionToken}"])) {
 ?>
 	<html lang="de">
 		<head>
@@ -60,15 +64,15 @@ if(isset($_SESSION["elansing_uWjXvgPMQHbJatunXDNP32"])) {
 							  <span class="time"><i class="fas fa-clock"></i> 22:33</span>
 							  <h3 class="timeline-header">Start der Programmierarbeiten am Webinterface</h3>
 							  <div class="timeline-body">
-                                <ol>
-                                  <li>Eröffnung des GitHub-Repositorys "Webinterface"</li>
-                                  <li>Erstellung eines Grunddesigns</li>
-                                  <li>Planung der zukünftigen Funktionen</li>
-                                  <li>Erstellung der GitHub-Issues für die Funktionen</li>
-																	<li>Erstellung eines Config-Files für Wichtige Einstellungen</li>
-																	<li>Erstellung des Logins</li>
-                                  <li>Erstellung der Update-Seite</li>
-                                </ol>
+	                <ol>
+	                  <li>Eröffnung des GitHub-Repositorys "Webinterface"</li>
+	                  <li>Erstellung eines Grunddesigns</li>
+	                  <li>Planung der zukünftigen Funktionen</li>
+	                  <li>Erstellung der GitHub-Issues für die Funktionen</li>
+										<li>Erstellung eines Config-Files für Wichtige Einstellungen</li>
+										<li>Erstellung des Logins</li>
+	                  <li>Erstellung der Update-Seite</li>
+	                </ol>
 							  </div>
 							</div>
 						  </div>
