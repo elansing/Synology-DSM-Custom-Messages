@@ -34,11 +34,10 @@
       $Country = $details->country;
       $AS = $details->org;
     }
-
-    $verbindung = mysqli_connect("localhost", "elansing_Banking", "Fff9s6?712")
+    $verbindung = mysqli_connect("{$Databasehost}", "{$Databaseuser}", "{$Databasepasswd}")
     or die ("Fehler im System");
 
-    mysqli_select_db($verbindung, "elansing_Banking")
+    mysqli_select_db($verbindung, "{$Database}")
     or die ("Verbidung zur Datenbank war nicht moeglich...");
 
     $control = 0;
@@ -55,7 +54,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>elansing-IT.de Webinterface</title>
+		<title>elansing-IT.de Webit</title>
 
 		<!-- Google Font: Source Sans Pro -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
