@@ -1,2 +1,2 @@
 # Webinterface
-Webinterface with much features
+The elansing-IT.de Developer Webinterface
